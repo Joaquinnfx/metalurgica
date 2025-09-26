@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Metalúrgica Orsatti</title>
+    <meta name="description" content="Contacta con Metalúrgica Orsatti. Formulario de contacto, datos de ubicación e información para solicitar cotizaciones.">
+    <link rel="shortcut icon" href="../assets/imgs/Logo-solo.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+     <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/imgs/Logo-horizontal.jpg" alt="Metalúrgica Orsatti" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero-contacto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="page-title">Contacto</h1>
+                    <p class="page-subtitle">Estamos aquí para ayudarte con tus necesidades metalúrgicas</p>
+                </div>
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/+2235402839?text=Hola! Quiero cotizar un trabajo." class="btn btn-primary mr-3" target="_blank"
+                        rel="noopener noreferrer"
+                        title="Contactanos via WhatsApp">Contactanos ahora</a>
+                        <a href="pages/servicios.html" class="btn btn-outline-light ">Trabajos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Información de Contacto</h2>
+                    <p class="section-subtitle">Múltiples formas de comunicarte con nosotros</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>Teléfono</h5>
+                        <p>+54 11 1234-5678</p>
+                        <p>+54 11 9876-5432</p>
+                        <small>Lunes a Viernes: 8:00 - 18:00</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p>info@metalurgicaorsatti.com</p>
+                        <p>ventas@metalurgicaorsatti.com</p>
+                        <small>Respuesta en 24 horas</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Dirección</h5>
+                        <p>Av. Industrial 1234</p>
+                        <p>Buenos Aires, Argentina</p>
+                        <small>Zona Industrial Norte</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-card">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">Solicitar Cotización</h2>
+                            <p class="section-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
+                        </div>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre">Nombre *</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="apellido">Apellido *</label>
+                                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email">Email *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="telefono">Teléfono *</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="empresa">Empresa</label>
+                                    <input type="text" class="form-control" id="empresa" name="empresa">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="servicio">Servicio de Interés *</label>
+                                    <select class="form-control" id="servicio" name="servicio" required>
+                                        <option value="">Seleccionar servicio</option>
+                                        <option value="fabricacion">Fabricación de Piezas</option>
+                                        <option value="mantenimiento">Mantenimiento Industrial</option>
+                                        <option value="consultoria">Consultoría Técnica</option>
+                                        <option value="soldadura">Soldadura Especializada</option>
+                                        <option value="reparaciones">Reparaciones y Restauración</option>
+                                        <option value="calidad">Control de Calidad</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Describe tu proyecto o consulta..." required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="acepto" name="acepto" required>
+                                    <label class="form-check-label" for="acepto">
+                                        Acepto los <a href="#" data-toggle="modal" data-target="#termsModal">términos y condiciones</a> *
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar Solicitud</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa y Ubicación -->
+     
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Nuestra Ubicación</h2>
+                    <p class="section-subtitle">Visítanos en nuestras instalaciones</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.636979557241!2d-57.56564922434039!3d-38.03224174655559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de879313c177%3A0x167859d1b65aebcd!2sFleming%20542%2C%20B7600AOL%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1758320308936!5m2!1ses!2sar"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios de Atención -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Horarios de Atención</h3>
+                    <div class="schedule-item">
+                        <div class="schedule-day">Lunes - Viernes</div>
+                        <div class="schedule-time">8:00 - 18:00</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-day">Sábados</div>
+                        <div class="schedule-time">8:00 - 12:00</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-day">Domingos</div>
+                        <div class="schedule-time">Cerrado</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Servicios de Emergencia</h3>
+                    <p>Para servicios de emergencia fuera del horario comercial, contáctanos al:</p>
+                    <div class="emergency-contact">
+                        <i class="fas fa-phone-alt text-primary"></i>
+                        <span>+54 11 9999-8888</span>
+                    </div>
+                    <p class="mt-3">
+                        <small class="text-muted">
+                            Disponible 24/7 para reparaciones urgentes y mantenimiento de emergencia.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Términos y Condiciones -->
+    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Términos y Condiciones</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>1. Información General</h6>
+                    <p>Al completar este formulario, usted acepta que Metalúrgica Orsatti procese sus datos personales para responder a su consulta.</p>
+                    
+                    <h6>2. Uso de Datos</h6>
+                    <p>Sus datos serán utilizados únicamente para contactarlo y brindarle información sobre nuestros servicios.</p>
+                    
+                    <h6>3. Confidencialidad</h6>
+                    <p>Nos comprometemos a mantener la confidencialidad de su información y no compartirla con terceros.</p>
+                    
+                    <h6>4. Contacto</h6>
+                    <p>Para cualquier consulta sobre el tratamiento de sus datos, puede contactarnos a info@metalurgicaorsatti.com</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="../assets/imgs/Logo-horizontal.jpg" alt="Metalúrgica Orsatti" height="60" class="mb-3">
+                    <p>Líder en soluciones metalúrgicas con más de 20 años de experiencia en el mercado.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li>Fabricación</li>
+                        <li>Mantenimiento</li>
+                        <li>Consultoría</li>
+                        <li>Reparaciones</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> +54 11 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@metalurgicaorsatti.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Metalúrgica Orsatti. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="../fontawesome/js/all.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/changeTitle.js"></script>
+    <script src="../js/buttons.js"></script>
+</body>
+</html>
