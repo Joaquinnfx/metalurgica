@@ -84,59 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(el);
     });
 
-    // Contador animado para estadísticas (si las hay)
-    const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-        const target = parseInt(counter.getAttribute('data-target'));
-        const duration = 2000; // 2 segundos
-        const increment = target / (duration / 16); // 60 FPS
-        let current = 0;
-
-        const updateCounter = () => {
-            if (current < target) {
-                current += increment;
-                counter.textContent = Math.floor(current);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.textContent = target;
-            }
-        };
-
-        // Iniciar contador cuando el elemento sea visible
-        const counterObserver = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    updateCounter();
-                    counterObserver.unobserve(entry.target);
-                }
-            });
-        });
-
-        counterObserver.observe(counter);
-    });
-
-    // Tooltips para iconos de servicios
-    const tooltipElements = document.querySelectorAll('[data-tooltip]');
-    tooltipElements.forEach(element => {
-        element.addEventListener('mouseenter', function () {
-            const tooltip = document.createElement('div');
-            tooltip.className = 'custom-tooltip';
-            tooltip.textContent = this.getAttribute('data-tooltip');
-            document.body.appendChild(tooltip);
-
-            const rect = this.getBoundingClientRect();
-            tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
-            tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
-        });
-
-        element.addEventListener('mouseleave', function () {
-            const tooltip = document.querySelector('.custom-tooltip');
-            if (tooltip) {
-                tooltip.remove();
-            }
-        });
-    });
-
     // Validación en tiempo real para formularios
     const formInputs = document.querySelectorAll('.form-control');
     formInputs.forEach(input => {
@@ -150,29 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
-    // Función para mostrar alertas
-    function showAlert(message, type = 'info') {
-        // Crear elemento de alerta
-        const alertDiv = document.createElement('div');
-        alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
-        alertDiv.style.cssText = 'top: 100px; right: 20px; z-index: 9999; min-width: 300px;';
-        alertDiv.innerHTML = `
-            ${message}
-            <button type="button" class="close" data-dismiss="alert">
-                <span>&times;</span>
-            </button>
-        `;
-
-        document.body.appendChild(alertDiv);
-
-        // Auto-remover después de 5 segundos
-        setTimeout(() => {
-            if (alertDiv.parentNode) {
-                alertDiv.remove();
-            }
-        }, 5000);
-    }
 
     // Función para validar campos
     function validateField(field) {
@@ -248,20 +172,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 
-//Header oculto
-let lastScroll = 0;
 
-const navBar = document.querySelector('.navbar');
-window.addEventListener("scroll", () => {
-    const currentScroll = window.scrollY;
-    
-    if (currentScroll > lastScroll) {
-      navBar.classList.add("head-oculto");
-      
-    } else {
-      navBar.classList.remove("head-oculto");
-    }
   
-    lastScroll = currentScroll;
-  });
 
