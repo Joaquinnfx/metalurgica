@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
     // Formulario de contacto
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -246,4 +247,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
 });
+
+//Header oculto
+let lastScroll = 0;
+
+const navBar = document.querySelector('.navbar');
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+    
+    if (currentScroll > lastScroll) {
+      navBar.classList.add("head-oculto");
+      
+    } else {
+      navBar.classList.remove("head-oculto");
+    }
+  
+    lastScroll = currentScroll;
+  });
 

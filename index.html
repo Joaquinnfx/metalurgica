@@ -14,8 +14,8 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg  fixed-top">
+    <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/imgs/Logo-horizontal.jpg" alt="Metalúrgica Orsatti" height="50">
@@ -32,7 +32,7 @@
                             <a class="nav-link" href="pages/nosotros.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/servicios.html">Trabajos</a>
+                            <a class="nav-link" href="pages/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/contacto.html">Contacto</a>
@@ -59,8 +59,8 @@
                     <div class="hero-buttons">
                         <a href="https://wa.me/+2235402839?text=Hola! Quiero cotizar un trabajo." class="btn btn-primary mr-3" target="_blank"
                         rel="noopener noreferrer"
-                        title="Contactanos via WhatsApp">Contactanos ahora</a>
-                        <a href="pages/servicios.html" class="btn btn-outline-light ">Trabajos</a>
+                        title="Contactanos via WhatsApp">Asesorate ahora</a>
+                        <a href="pages/servicios.html" class="btn btn-outline-light ">Servicios</a>
                     </div>
                 </div>
             </div>
@@ -77,41 +77,102 @@
                     <p class="section-subtitle">Soluciones metalúrgicas integrales para la industria</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="grid-inicio">
+                <!-- Cards de Servicios -->
+                <div class="cards-inicio">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-cogs"></i>
+                        <div class="service-img">
+                            <img src="/assets/imgs/serv-aluminio.jpg" alt="Aluminio">
                         </div>
-                        <h4>Fabricación</h4>
-                        <p>Fabricación de piezas metalúrgicas personalizadas según especificaciones técnicas del cliente.</p>
+                        <div class="service-info">
+                        <h4>Aluminio</h4>
+                        <p>Fabricación de piezas metalúrgicas en aluminio.</p>
+                        </div>
+                        <a href="https://wa.me/+2235402839?text=Hola! Quiero cotizar un trabajo." class="btn btn-primary " target="_blank"
+                        rel="noopener noreferrer"
+                        title="Contactanos via WhatsApp">Consulta ahora</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Cards de Servicios -->
+                <div class="cards-inicio">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-tools"></i>
+                        <div class="service-img">
+                            <img src="/assets/imgs/serv-acero.jpg" alt="Acero">
                         </div>
-                        <h4>Mantenimiento</h4>
-                        <p>Servicios de mantenimiento y reparación de equipos metalúrgicos industriales.</p>
+                        <div class="service-info">
+                        <h4>Acero</h4>
+                        <p>Fabricación de piezas metalúrgicas en acero.</p>
+                        </div>
+                        <a href="https://wa.me/+2235402839?text=Hola! Quiero cotizar un trabajo." class="btn btn-primary " target="_blank"
+                        rel="noopener noreferrer"
+                        title="Contactanos via WhatsApp">Consulta ahora</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Cards de Servicios -->
+                <div class="cards-inicio">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-industry"></i>
+                        <div class="service-img">
+                            <img src="/assets/imgs/serv-corteyp.jpg" alt="corte y plegado">
                         </div>
-                        <h4>Consultoría</h4>
-                        <p>Asesoramiento técnico especializado en procesos metalúrgicos y optimización industrial.</p>
+                        <div class="service-info">
+                        <h4>Corte y plegado</h4>
+                        <p>Corte y plegado de piezas metalúrgicas.</p>
+                        </div>
+                        <a href="https://wa.me/+2235402839?text=Hola! Quiero cotizar un trabajo." class="btn btn-primary " target="_blank"
+                        rel="noopener noreferrer"
+                        title="Contactanos via WhatsApp">Consulta ahora</a>
+                    </div>
+                </div>
+                <!-- Cards de Servicios -->
+                <div class="cards-inicio">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="/assets/imgs/serv-hierro.jpg" alt="hierro">
+                        </div>
+                        <div class="service-info">
+                        <h4>Hierro</h4>
+                        <p>Fabricación de piezas metalúrgicas en hierro.</p>
+                        </div>
+                        <a href="https://wa.me/+2235402839?text=Hola! Quiero cotizar un trabajo." class="btn btn-primary " target="_blank"
+                        rel="noopener noreferrer"
+                        title="Contactanos via WhatsApp">Consulta ahora</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Proyectos realizados -->
+
+    <section class="py-5">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Trabajos realizados</h2>
+                    <p class="section-subtitle">Algunos de los trabajos que hemos realizado</p>
+                </div>
+            </div>
+            <div class="grid-proyectos">
+                <div class="grid-img" id="img1"><img src="./assets/imgs/marquesina-acero.jpeg" alt="Marquesina de acero"></div>
+                <div class="grid-img" id="img2"><img src="./assets/imgs/escalera-acero.jpeg" alt="Escalera de acero"></div>
+                <div class="grid-img" id="img3"><img src="./assets/imgs/escalera2-acero.jpeg" alt="Escalera de acero 2"></div>
+                <div class="grid-img" id="img4"><img src="./assets/imgs/balcon-acero.jpeg" alt="Balcon de acero"></div>
+                <div class="grid-img" id="img5"><img src="./assets/imgs/puerta-aluminio.jpeg" alt="Puerta de aluminio"></div>
+                <div class="grid-img" id="img6"><img src="./assets/imgs/cocina-aluminio.jpeg" alt="Cocina de aluminio"></div>
+                <div class="grid-img" id="img7"><img src="./assets/imgs/escalera-aluminio.jpeg" alt="Escalera de aluminio"></div>
+                <div class="grid-img" id="img8"><img src="./assets/imgs/escalera2-aluminio.jpeg" alt="Escalera de aluminio 2"></div>
+                <div class="grid-img" id="img9"><img src="./assets/imgs/balcon-aluminio.jpeg" alt="Balcon de aluminio"></div>
+                <div class="grid-img" id="img10"><img src="./assets/imgs/puerta-aluminio.jpeg" alt="Puerta de aluminio"></div>
+                <div class="grid-img" id="img11"><img src="./assets/imgs/puerta-aluminio.jpeg" alt="Puerta de aluminio"></div>
+                <div class="grid-img" id="img12"><img src="./assets/imgs/puerta-aluminio.jpeg" alt="Puerta de aluminio"></div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- Características Principales -->
 
-    <section class="features-section py-5 bg-light">
+    <section class="features-section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -151,15 +212,43 @@
                         <div class="feature-icon">
                             <i class="fas fa-handshake"></i>
                         </div>
-                        <h5>Servicio Personalizado</h5>
-                        <p>Atención personalizada y soluciones adaptadas a cada cliente.</p>
+                        <h5>Más de 20 años de experiencia</h5>
+                        <p>Más de 20 años de experiencia en el mercado metalúrgico.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Mapa y Ubicación -->
+     
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">Nuestra Ubicación</h2>
+                        <p class="section-subtitle">Visítanos en nuestras instalaciones</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.636979557241!2d-57.56564922434039!3d-38.03224174655559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de879313c177%3A0x167859d1b65aebcd!2sFleming%20542%2C%20B7600AOL%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1758320308936!5m2!1ses!2sar"
+                                width="100%" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- CTA Section -->
 
     <section class="cta-section py-5">
         <div class="container">
@@ -178,7 +267,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+<!-- Footer -->
 
     <footer class="footer bg-dark text-light py-5">
         <div class="container">
@@ -187,8 +276,6 @@
                     <img src="assets/imgs/Logo-horizontal.jpg" alt="Metalúrgica Orsatti" height="60" class="mb-3">
                     <p>Líder en soluciones metalúrgicas con más de 20 años de experiencia en el mercado.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -213,9 +300,9 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-phone"></i>+54 11 1234-5678</li>
+                        <li><i class="fas fa-phone"></i> +54 11 1234-5678</li>
                         <li><i class="fas fa-envelope"></i> info@metalurgicaorsatti.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Mar del Plata, Argentina</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mar del Plata, Argentina</li>
                     </ul>
                 </div>
             </div>

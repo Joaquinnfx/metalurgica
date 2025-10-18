@@ -8,6 +8,7 @@
     --dark-gray: #333333;
     --text-color: #4d4d4d;
     --bg-light: #f8f9fa;
+    --bg-dark: #b7b7b7;
 }
 
 /* Reset y configuración base */
@@ -31,16 +32,17 @@ p, a, li, span {
 }
 
 /* Header */
-.header {
-    position: relative;
-    z-index: 1000;
+
+.head-oculto {
+    top: -100px;
+    transition: all 0.4s ease;
 }
 
 .navbar {
     background-color: var(--black) ;
     padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .navbar-nav .nav-link {
@@ -227,27 +229,23 @@ p, a, li, span {
     margin-bottom: 3rem;
 }
 
-/* Servicios */
-
-.page-hero-servicios {
-    background:url(/assets/imgs/foto-servicios.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    margin-top: 40px;
-}
+/* Inicio */
 
 .services-section {
     padding: 5rem 0;
 }
 
+.grid-inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 95vh);
+    gap: 2rem;
+}
+
 .service-card {
+    display: flex;
+    flex-direction: column;
     background: var(--white);
-    padding: 2.5rem 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     text-align: center;
@@ -256,30 +254,25 @@ p, a, li, span {
     border: 1px solid #f0f0f0;
 }
 
+.service-img {
+    width: 100%;
+    height: 70%;
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.service-info{
+    margin-top: 40px;
+}
+
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-.service-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), #c00a0f);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.service-icon i {
-    font-size: 2rem;
-    color: var(--white);
-}
-
-.service-card:hover .service-icon {
-    transform: scale(1.1);
 }
 
 .service-card h4 {
@@ -294,9 +287,105 @@ p, a, li, span {
     line-height: 1.6;
 }
 
+/* Proyectos realizados */
+
+.grid-proyectos {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    "img9 img10 img11 img12";
+    gap: 10px;
+    border: 5px solid var(--light-gray);
+    /* border-radius: 4px; */
+    padding: 15px;
+    transition: all 0.4s ease;
+}
+
+.grid-proyectos:hover {
+    border: 5px solid var(--primary-color);
+    transition: all 0.4s ease;
+}
+
+#img1{
+    grid-area: img1;
+}
+#img2{
+    grid-area: img2;
+}
+#img3{
+    grid-area: img3;
+}
+#img4{
+    grid-area: img4;
+}
+#img5{
+    grid-area: img5;
+}
+#img6{
+    grid-area: img6;
+}
+#img7{
+    grid-area: img7;
+}
+#img8{
+    grid-area: img8;
+}
+#img9{
+    grid-area: img9;
+}
+#img10{
+    grid-area: img10;
+}
+#img11{
+    grid-area: img11;
+}
+#img12{
+    grid-area: img12;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.grid-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.grid-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+/* Servicios */
+
+.page-hero-servicios {
+    background:url(/assets/imgs/foto-servicios.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
 /* Características */
 .features-section {
-    background-color: var(--bg-light);
+    background-color: var(--bg-dark);
+    /* background: url(/assets/imgs/fondo-gris.jpg); */
+    background-size: cover;
 }
 
 .feature-item {
@@ -328,6 +417,7 @@ p, a, li, span {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--secondary-color);
+    /* color: var(--white); */
     margin-bottom: 1rem;
 }
 
@@ -338,7 +428,7 @@ p, a, li, span {
 
 /* CTA Section */
 .cta-section {
-    background:url(/assets/imgs/foto-section.jpg);
+    background:url(/assets/imgs/foto3-fondo-cta.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: var(--black);
@@ -348,12 +438,14 @@ p, a, li, span {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
 .cta-description {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+    color: white;
 }
 
 /* Footer */

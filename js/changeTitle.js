@@ -1,7 +1,6 @@
 const originalTitle = document.title;
 let interval;
 
-
 document.addEventListener('visibilitychange', ()=>{
 
     if(document.hidden){
