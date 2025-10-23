@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, observerOptions);
 
     // Observar elementos para animaciones
-    const animateElements = document.querySelectorAll('.service-card, .feature-item, .pillar-card, .team-card, .certification-card, .service-detail-card, .contact-info-card');
+    const animateElements = document.querySelectorAll('.service-card, .feature-item, .team-card, .certification-card, .service-detail-card, .contact-info-card');
     animateElements.forEach(el => {
         observer.observe(el);
     });
@@ -144,32 +144,16 @@ document.addEventListener('DOMContentLoaded', function () {
         return isValid;
     }
 
-    // Preloader (si existe)
-    const preloader = document.querySelector('.preloader');
-    if (preloader) {
-        window.addEventListener('load', function () {
-            preloader.style.opacity = '0';
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 500);
-        });
-    }
-
-    
-
     // Hover effects para cards
-    const cards = document.querySelectorAll('.service-card, .feature-item, .pillar-card, .team-card, .certification-card, .service-detail-card, .contact-info-card');
+    const cards = document.querySelectorAll('.service-card, .feature-item, .team-card, .certification-card, .service-detail-card, .contact-info-card');
     cards.forEach(card => {
         card.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-10px)';
         });
-
         card.addEventListener('mouseleave', function () {
             this.style.transform = 'translateY(0)';
         });
-    });
-
-    
+    }); 
 });
 
 
